@@ -7,9 +7,9 @@ The Recoilens provides a custom state logger for Recoil, a state management libr
 To install the Recoil Logger Library, use npm or yarn:
 
 ```bash
-npm install recoil-logger
+npm install recoilens
 # or
-yarn add recoil-logger
+yarn add recoilens
 ```
 
 ## Usage
