@@ -17,7 +17,7 @@ yarn add recoil-logger
 ### 1. Import the Library
 
 ```jsx
-import RecoilLogger from "recoilize";
+import RecoilLogger from "recoilens";
 ```
 
 ### 2. Wrap your Application in `RecoilRoot`
