@@ -1,13 +1,6 @@
 # Node.js
 node_modules/
 
-# Compiled output
-dist/
-*.js
-*.jsx
-*.ts
-*.tsx
-
 # Dependency directories
 /.pnp/
 .pnp.js
