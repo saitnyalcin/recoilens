@@ -1,0 +1,33 @@
+# Node.js
+node_modules/
+
+# Compiled output
+dist/
+*.js
+*.jsx
+*.ts
+*.tsx
+
+# Dependency directories
+/.pnp/
+.pnp.js
+
+# Yarn
+yarn-error.log
+
+# Visual Studio Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# IDE-specific files
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw??
