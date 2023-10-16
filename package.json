@@ -1,5 +1,5 @@
 {
-  "name": "recoil-logger",
+  "name": "recoilens",
   "version": "1.0.0",
   "description": "A custom state logger for Recoil",
   "main": "src/index.js",
@@ -13,12 +13,13 @@
   ],
   "author": "Sait N Yalcin",
   "license": "MIT",
-  "dependencies": {
-    "@types/react": "^18.2.28",
-    "typescript": "^5.2.2"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/saitnyalcin/recoilens.git"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.28",
+    "@types/react-dom": "^18.2.13",
+    "typescript": "^5.2.2"
   }
 }
