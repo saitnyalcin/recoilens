@@ -42,20 +42,34 @@
       </div>
     </section>
 
-    <section class="installation">
+    <section class="installation" id="installation">
       <div class="container">
-        <h2>Installation</h2>
-        <pre>
-                <code class="bash">
-                    npm install recoilens
-                </code>
-            </pre>
-        <p>or</p>
-        <pre>
-                <code class="bash">
-                    yarn add recoilens
-                </code>
-            </pre>
+        <h2 class="text-center">Installation</h2>
+        <div class="code-container">
+          <pre>
+            <code class="bash">
+              npm install recoilens
+            </code>
+          </pre>
+          <button
+            class="copy-button"
+            onclick="copyCode('npm install recoilens')"
+          >
+            Copy
+          </button>
+          <div class="copy-message" id="copyMessage1"></div>
+        </div>
+        <div class="code-container">
+          <pre>
+            <code class="bash">
+              yarn add recoilens
+            </code>
+          </pre>
+          <button class="copy-button" onclick="copyCode('yarn add recoilens')">
+            Copy
+          </button>
+          <div class="copy-message" id="copyMessage2"></div>
+        </div>
       </div>
     </section>
 
@@ -77,5 +91,18 @@
         <p>&copy; 2023 Recoilens. All rights reserved.</p>
       </div>
     </footer>
+
+    <script>
+      function copyCode(code) {
+        navigator.clipboard.writeText(code);
+        const copyMessage = document.createElement("div");
+        copyMessage.classList.add("copy-message");
+        copyMessage.textContent = "Copied";
+        event.target.parentNode.appendChild(copyMessage);
+        setTimeout(() => {
+          copyMessage.remove();
+        }, 1500);
+      }
+    </script>
   </body>
 </html>
