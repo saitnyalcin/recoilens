@@ -1,6 +1,6 @@
 {
   "name": "recoilens",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "homepage": "https://saitnyalcin.github.io/recoilens/",
   "description": "The Recoilens provides a custom state logger for Recoil, a state management library for React. It allows you to track changes in a specific atom and display a message as a popup",
   "main": "src/index.js",
