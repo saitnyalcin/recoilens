@@ -48,18 +48,32 @@ import { useRecoilState, atom } from "recoil";
 
 export const myAtom = atom({
   key: "myAtom",
-  default: 0,
+  default: {
+    property: 0,
+  },
 });
 
 const ButtonControls = () => {
   const [currentValue, setCurrentValue] = useRecoilState(myAtom);
 
   const increaseValue = () => {
-    setCurrentValue((prevValue) => prevValue + 1);
+    setCurrentValue((prevValue) => {
+      const updatedValue = {
+        ...prevValue,
+        property: prevValue.property + 1,
+      };
+      return updatedValue;
+    });
   };
 
   const decreaseValue = () => {
-    setCurrentValue((prevValue) => prevValue - 1);
+    setCurrentValue((prevValue) => {
+      const updatedValue = {
+        ...prevValue,
+        property: prevValue.property - 1,
+      };
+      return updatedValue;
+    });
   };
 
   return (
@@ -74,7 +88,7 @@ const ButtonControls = () => {
 
 ### 4. Run Your Application
 
-Start your application to see the Recoil Logger in action.
+Start your application to see the Recoilens Logger in action.
 
 ## License
 

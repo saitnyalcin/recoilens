@@ -29,7 +29,8 @@ const RecoilLogger = ({ value }) => {
     const currentValue = (0, recoil_1.useRecoilValue)(value);
     const previousValue = usePrevious(currentValue);
     (0, react_1.useEffect)(() => {
-        console.log(`Current Value: ${currentValue}, Previous Value: ${previousValue}`);
+        console.log("Current Value:", currentValue);
+        console.log("Previous Value:", previousValue);
         const popup = document.getElementById("popup");
         if (popup) {
             popup.style = `

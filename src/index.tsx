@@ -6,9 +6,8 @@ const RecoilLogger = ({ value }: any) => {
   const previousValue = usePrevious(currentValue);
 
   useEffect(() => {
-    console.log(
-      `Current Value: ${currentValue}, Previous Value: ${previousValue}`
-    );
+    console.log("Current Value:", currentValue);
+    console.log("Previous Value:", previousValue);
 
     const popup = document.getElementById("popup") as any;
 
