@@ -1,154 +1,151 @@
 body {
-    font-family: 'Calibri', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f7f7f7;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
-  .hero {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 100px 0;
-  }
-  
-  .hero img {
-    border-radius: 50%;
-  }
-  
-  .hero h1 {
-    font-size: 36px;
-    margin: 20px 0;
-  }
-  
-  .hero p {
-    font-size: 18px;
-    margin-bottom: 30px;
-  }
-  
-  .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ff4a57;
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-    border-radius: 5px;
-    margin-right: 10px;
-  }
-  
-  .btn:hover {
-    background-color: #333;
-  }
-  
-  .feature {
-    background-color: #fff;
-    padding: 100px 0;
-    text-align: center;
-  }
-  
-  .feature h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-  .feature p {
-    font-size: 18px;
-    color: #333;
-  }
-  
-  .installation {
-    background-color: #f7f7f7;
-    padding: 100px 0;
-  }
-  
-  .installation h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-  .code {
-    background-color: #f2f2f2;
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-  }
-  
-  .copy-button {
-    background-color: #ff4a57;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .copy-button:hover {
-    background-color: #333;
-  }
-  
-  .cta {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 100px 0;
-  }
-  
-  .cta p {
-    font-size: 18px;
-    margin-bottom: 30px;
-  }
-  
-  .cta .btn {
-    background-color: #ff4a57;
-  }
-  
-  .cta .btn:hover {
-    background-color: #333;
-  }
-  
-  footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-  }
-  
-  footer p {
-    font-size: 14px;
-    margin: 0;
-  }
-  
-  .installation {
-    text-align: center;
-  }
-  
-  .code-container {
-    position: relative;
-    margin-bottom: 20px;
-    text-align: left;
-  }
-  
-  .code-container pre {
-    display: inline-block;
-  }
-  
-  .copy-button {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-  
-  .copy-message {
-    font-size: 14px;
-    color: #4caf50;
-    display: inline-block;
-    margin-left: 10px;
-    vertical-align: middle;
-  }
+  font-family: 'Calibri', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero img {
+  border-radius: 50%;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #ff4a57;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+  margin-right: 10px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #333;
+}
+
+.feature {
+  background-color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.feature h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.feature p {
+  font-size: 20px;
+  color: #333;
+}
+
+.installation {
+  background-color: #f7f7f7;
+  padding: 100px 0;
+}
+
+.installation h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.code {
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.copy-button {
+  background-color: #ff4a57;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.copy-button:hover {
+  background-color: #333;
+}
+
+.cta {
+  background-color: #1e4159;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.cta p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.cta .btn {
+  background-color: #ff4a57;
+}
+
+.cta .btn:hover {
+  background-color: #333;
+}
+
+footer {
+  background-color: #1e4159;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.installation {
+  text-align: center;
+}
+
+.code-container pre {
+  display: inline-block;
+}
+
+.code-container {
+  display: flex;
+  align-items: center;
+}
+
+.copy-button {
+  margin-left: 10px;
+}
+
+.copy-message {
+  font-size: 16px;
+  color: #4caf50;
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
+}

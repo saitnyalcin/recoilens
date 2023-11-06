@@ -53,7 +53,7 @@
           </pre>
           <button
             class="copy-button"
-            onclick="copyCode('npm install recoilens')"
+            onclick="copyCode('npm install recoilens', 'copyMessage1')"
           >
             Copy
           </button>
@@ -65,7 +65,10 @@
               yarn add recoilens
             </code>
           </pre>
-          <button class="copy-button" onclick="copyCode('yarn add recoilens')">
+          <button
+            class="copy-button"
+            onclick="copyCode('yarn add recoilens', 'copyMessage2')"
+          >
             Copy
           </button>
           <div class="copy-message" id="copyMessage2"></div>
@@ -93,14 +96,13 @@
     </footer>
 
     <script>
-      function copyCode(code) {
-        navigator.clipboard.writeText(code);
-        const copyMessage = document.createElement("div");
-        copyMessage.classList.add("copy-message");
+      function copyCode(code, messageID) {
+        const copyMessage = document.getElementById(messageID);
         copyMessage.textContent = "Copied";
-        event.target.parentNode.appendChild(copyMessage);
+        navigator.clipboard.writeText(code);
+
         setTimeout(() => {
-          copyMessage.remove();
+          copyMessage.textContent = "";
         }, 1500);
       }
     </script>
