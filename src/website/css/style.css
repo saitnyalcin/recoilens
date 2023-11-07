@@ -39,6 +39,7 @@ body {
   font-size: 18px;
   border-radius: 5px;
   margin-right: 10px;
+  margin-bottom: 10px;
   transition: background-color 0.3s;
 }
 
@@ -136,6 +137,7 @@ footer p {
 .code-container {
   display: flex;
   align-items: center;
+  text-align: center;
 }
 
 .copy-button {
